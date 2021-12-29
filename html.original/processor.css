@@ -1,0 +1,201 @@
+body{
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+
+}
+
+#Legend{
+	width: 26%;
+	float: left;
+	font-family: monospace;
+	padding-left: 5px;
+}
+
+#Legend .lheader{
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 0px;
+	line-height: 28px;
+}
+
+
+#Legend pre b{
+	font-size: 16px;
+}
+
+#ProcessorBlock{
+	position: relative;
+	background:url(simple.png)  no-repeat;
+	background-size: 800px;
+	width: 800px;
+	height: 600px;
+	margin: 1% auto 0px;
+}
+
+#InputStrip{
+	top: -573px;
+	left: 0px;		
+	background-color:#e5fff0;
+	width: 90px;
+	height: 900px;
+	z-index: 10;
+}
+#OutputStrip{			
+	top: -573px;
+	right:2px;			
+	background-color:#d7eef4;
+	width: 90px;
+	height: 900px;
+	z-index: 10;
+}
+#MemoryStrip{			
+	top:0px;
+	left:264px;	
+	width: 900px;
+	height: 90px;
+	background-color:#ffe1ec;
+	z-index: 20;
+}
+.strip{
+	position:absolute;
+	font-size: 0; //Хак для инлайн блока
+}
+.strip .inner{
+	width: 90px;
+	height: 90px;			
+	border-color:#0099CC;   
+	border: grey solid 1px;
+	text-align:left;
+	box-sizing: border-box;	
+	display: inline-block;
+	font-size: 30px;
+}	
+
+
+
+.ATstrip {
+	width: 90px;
+	height: 90px;			
+	border-color:#0099CC;   
+	text-align:left;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+#TStrip {
+	top: 207px;
+	left: 357px;
+	z-index: 10;
+}
+
+#AStrip {
+	top: 324px;
+	left: 356px;
+	z-index: 10;
+}
+
+.NZPstrip {
+	top: 435px;
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border: gray solid 1px;
+	text-align: left;
+	box-sizing: border-box;
+	font-size: 29px;
+	border-radius: 50px 50px 50px 50px;
+	color: gray;
+	padding: 16px 12px;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+#NStrip {
+	left: 225px;
+	z-index: 10;
+}
+
+#ZStrip {
+	left: 364px;
+	z-index: 10;
+}
+
+#PStrip {
+	left: 503px;
+	z-index: 10;
+}
+
+
+
+
+
+#InputStrip .num{
+	font-size: 20px;
+	padding-top: 30px;
+	padding-left: 5px;
+	float: left;
+	color: gray;
+	border-right: solid 1px;
+	padding-bottom: 35px;
+	padding-right: 5px;
+	width: 17px;
+}
+
+#InputStrip .content{
+	float: right;
+	width: 56px;
+	height: 88px;
+	padding-top: 23px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#OutputStrip .num{
+	font-size: 20px;
+	padding: 30px 5px 35px;
+	float: right;
+	color: #808080;
+	border-left: 1px solid;
+}
+
+#OutputStrip .content{
+	float: left;
+	width: 67px;
+	height: 88px;
+	padding-top: 23px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#MemoryStrip .num{
+	font-size: 20px;
+	color: #808080;
+	border-bottom: 1px solid;
+	height: 25px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#MemoryStrip .content{
+	float: left;
+	width: 87px;
+	height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 13px;
+}
+
+#InputDataEdit{
+	background-color:#e5fff0;
+	border: solid 1px gray;
+	margin-top: 1%;
+	padding: 5px;
+	width: 100%;
+	font-size: 20px;
+}
+
+#InputDataEdit.empty{
+	color: gray;
+}

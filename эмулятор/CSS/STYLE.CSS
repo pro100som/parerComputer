@@ -1,0 +1,85 @@
+body {
+	background: whitesmoke;
+	overflow: hidden;
+	text-align: center;
+}
+
+.processor {
+	margin: 20px auto;
+	width: 902px;
+	position: relative;
+	transition: 1s;
+}
+
+.processor__strip {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+}
+.processor__strip .processor__strip {
+	height: 98px;
+	width: 98px;
+	border: 2px solid black;
+	line-height: 98px;
+	text-align: center;
+	font-size: 20px;
+}
+.processor__strip--mem {
+	top: 1px;
+	z-index: -3;
+	background: pink;
+}
+.processor__strip--mem .processor__strip--mem {
+	top: 0px;
+}
+.processor__strip--inp {
+	left: 0px;
+	background: lightgreen;
+	z-index: -2;
+}
+.processor__strip--inp .processor__strip--inp {
+	left: 0px;
+}
+.processor__strip--out {
+	left: 799px;
+	background: lightblue;
+	z-index: -4;	
+}
+.processor__strip--out .processor__strip--out {
+	left: 0px;
+}
+.processor__strip--T {
+	height: 98px;
+	width: 98px;
+	border: 2px solid black;
+	line-height: 98px;
+	text-align: center;
+	font-size: 20px;
+	left: 403px;
+	top: 235px;
+}
+.processor__strip--A {
+	height: 98px;
+	width: 98px;
+	border: 2px solid black;
+	line-height: 98px;
+	text-align: center;
+	font-size: 20px;
+	left: 403px;
+	top: 369px;
+}
+.processor__num {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.processor__data {
+	position: relative;
+	top: -20px;
+	left: 0px;
+}
+.processor__input {
+	width: 100%;
+	font-size: 14px; 
+}
